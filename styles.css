@@ -1,0 +1,77 @@
+:root {
+    --white-color: hsl(0, 0%, 100%);
+    --green-color: hsl(75, 94%, 57%);
+
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    background-color: var(--grey-900);
+    height: 100vh;
+    width: 100vw;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.social-card {
+    width: 400px;
+    height: 650px;
+    background-color: var(--grey-800);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 40px 20px;
+    color: var(--white-color);
+}
+
+.social-card img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.social-card p:nth-child(3) {
+    color: var(--green-color);
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+
+.social-link {
+    width: 90%;
+    height: 10%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: var(--white-color);
+    background-color: var(--grey-700);
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.social-link:hover {
+    background-color: var(--green-color);
+    color: var(--grey-900);
+}
