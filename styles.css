@@ -52,8 +52,20 @@ body {
 .social-card p:nth-child(3) {
     color: var(--green-color);
     font-weight: bold;
-    font-size: 15px;
+    font-size: 14px;
     text-align: center;
+    margin-top: 5px;
+}
+
+
+.not-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.not-links h2 {
+    font-weight: 400;
 }
 
 .social-link {
@@ -74,4 +86,5 @@ body {
 .social-link:hover {
     background-color: var(--green-color);
     color: var(--grey-900);
+
 }
